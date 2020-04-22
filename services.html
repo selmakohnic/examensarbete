@@ -7,24 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta-taggar -->
 
-    <!-- Favicon 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" href="images/favicon.png">-->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="favicon.png">
 
-    <!-- Länk till stilmallen -->
+    <!-- Stilmall -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
-    <!-- jQuery 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header id="header-bg">
         <div class="wrapper">
-            <a href="index.html" title="RM Kedjeservice AB"><img src="images/logotype.svg" alt="RM Kedjeservice AB"
-                    title="RM Kedjeservice AB" id="logo" /></a>
-            <nav>
+            <div id="wrapper-header">
+                <a href="index.html" title="RM Kedjeservice AB"><img src="images/logotype.svg" alt="RM Kedjeservice AB"
+                        title="RM Kedjeservice AB" id="logo" /></a>
+
+                <div id="wmenu" class="wrapper-menu">
+                    <div id="hamburger-menu">
+                        <div class="menu-bar-1"></div>
+                        <div class="menu-bar-2"></div>
+                        <div class="menu-bar-3 no-margin"></div>
+                    </div>
+                    <span id="menu-text">Meny</span>
+                </div>
+            </div>
+
+            <nav class="global-nav">
                 <ul>
                     <li><a href="index.html" title="Hem"><span>Hem</span></a></li>
                     <li><a href="services.html" title="Tjänster"><span>Tjänster</span></a></li>
@@ -96,7 +109,7 @@
             <div class="image-right">
                 <img src="images/for-sale-bg.jpg" alt="Tjänst" title="Tjänst">
             </div>
-            <section class="service-left">
+            <section class="service-left no-margin">
                 <h2 class="title">Hämtservice</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis condimentum leo, eget accumsan
                     odio fringilla vel. Nullam lacinia nibh vitae convallis lacinia. Morbi maximus nunc ipsum, ac cursus
@@ -170,12 +183,13 @@
                     förbättra vårt sätt att slipa era maskinkedjor.
                 </p>
             </section>
-            <p id="copyright-info"><span id="copyright">&copy; 2020 RM Kedjeservice AB</span> <span id="web-developer"> Utvecklad av Selma Kohnic</span></p>
+            <p id="copyright-info"><span id="copyright">&copy; 2020 RM Kedjeservice AB</span> <span id="web-developer">
+                    Utvecklad av Selma Kohnic</span></p>
         </div>
     </footer>
 
-    <!-- Länk till JavaScript-fil 
-    <script src="js/main.js"></script>-->
+    <!-- JavaScript-fil -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
