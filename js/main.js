@@ -8,18 +8,16 @@ var windowWidth = window.innerWidth
     || document.body.clientWidth;
 
 $(document).ready(function () {
-    if (windowWidth <= 1000) {
-        $(document).scroll(function () {
-            scrollPosition = $(this).scrollTop();
+    $(document).scroll(function () {
+        scrollPosition = $(this).scrollTop();
 
-            if (scrollPosition > 10) {
-                $(".wrapper-header-index").css("background-color", "#F8F8F8");
-            }
-            else {
-                $(".wrapper-header-index").css("background-color", "#F8F8F8");
-            }
-        });
-    }
+        if (scrollPosition > 10) {
+            $(".wrapper-header-index").css("background-color", "#F8F8F8");
+        }
+        else {
+            $(".wrapper-header-index").css("background-color", "#F8F8F8");
+        }
+    });
 });
 
 wrapperMenu.addEventListener("click", function () {
