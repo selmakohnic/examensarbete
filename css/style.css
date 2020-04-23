@@ -203,6 +203,10 @@ header a:hover {
     padding: 0 1.5em;
 }
 
+.wrapper-header-index {
+    background-color: transparent;
+}
+
 .wrapper-index button:hover {
     cursor: pointer;
 }
@@ -582,8 +586,12 @@ footer a:hover {
         height: 6em;
     }
 
-    #header-bg #wrapper-header {
+    #header-bg #wrapper-header, .wrapper-header-index {
         background-color: #F8F8F8;
+    }
+
+    .wrapper-header-index {
+        overflow: auto;
     }
 
     .wrapper-menu {
