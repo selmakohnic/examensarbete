@@ -70,6 +70,16 @@ h3 {
     vertical-align: top;
 }
 
+.wrapper-news-index-con {
+    overflow: hidden;
+    height: 12em;
+    width: 100%;
+}
+
+.wrapper-news-index section img {
+    object-fit: cover;
+}
+
 #con {
     overflow: auto;
 }
@@ -109,13 +119,16 @@ h3 {
     text-align: center;
 }
 
-button {
-    border: none;
+.buttons {
+    text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 0.95em;
     font-family: inherit;
     width: 100%;
-    height: 4em;
+    text-align: center;
+    display: block;
+    padding: 1em;
 }
 
 .center-info {
@@ -179,7 +192,7 @@ header a, header a:active, header a:visited {
     padding: 1em;
     color: #000000;
     text-decoration: none;
-    font-weight: 550;
+    font-weight: 600;
     transition: border 0.3s ease, padding 0.3s ease;
 }
 
@@ -207,7 +220,7 @@ header a:hover {
     background-color: transparent;
 }
 
-.wrapper-index button:hover {
+.wrapper-index .buttons:hover {
     cursor: pointer;
 }
 
@@ -223,7 +236,7 @@ header a:hover {
     text-align: center;
 }
 
-.index-info button {
+.index-info .buttons {
     background-color: #313131;
     color: #FFFFFF;
 }
@@ -276,7 +289,7 @@ header a:hover {
     display: inline-block;
 }
 
-#for-sale-bg button {
+#for-sale-bg .buttons {
     background-color: #EF7B22;
     color: #FFFFFF;
     margin-top: 1em;
@@ -287,18 +300,18 @@ header a:hover {
     overflow: auto;
 }
 
-#left-p, #right-p {
+.left-p, .right-p {
     width: 49.6%;
     margin-top: 0;
 }
 
-#left-p {
+.left-p {
     padding-right: 2.2em;
     border-right: 3px dashed #EF7B22;
     float: left;
 }
 
-#right-p {
+.right-p {
     padding-left: 2.2em;
     border-left: 3px dashed #EF7B22;
     float: right;
@@ -332,6 +345,15 @@ header a:hover {
 
 .image-right, .service-right {
     margin-left: 2.2em;
+}
+
+.link, .link:active, .link:visited {
+    color: rgb(211, 92, 2);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 .light-bg {
@@ -584,6 +606,7 @@ footer a:hover {
         padding: 0 24px;
         padding-bottom: 1em;
         height: 6em;
+        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
     }
 
     #header-bg #wrapper-header, .wrapper-header-index {
@@ -766,7 +789,7 @@ footer a:hover {
         margin: 0 auto !important;
     }
 
-    #left-p, #right-p {
+    .left-p, .right-p {
         width: 100%;
         float: none;
         border: 0;
@@ -965,7 +988,7 @@ footer a:hover {
         font-size: 1.3em;
     }
 
-    .index-info button {
+    .index-info .buttons {
         margin-top: 1em;
     }
 
