@@ -75,8 +75,7 @@ h3 {
     margin-right: 3.5em;
     vertical-align: top;
     float: left;
-    margin-bottom: -50px;
-    padding-bottom: 50px;
+    height: 100%;
 }
 
 .wrapper-news-index-con {
@@ -121,9 +120,8 @@ h3 {
 
 .info-con a {
     display: block;
-    margin-top: 2em;
     position: absolute;
-    bottom: 20px;
+    bottom: 16px;
     text-align: center;
     width: 18em;
 }
@@ -226,6 +224,27 @@ header a:hover {
     cursor: pointer;
 }
 
+.error-title {
+    margin-bottom: 0.4em;
+}
+
+#error-nav {
+    margin-top: 0;
+}
+
+#error-nav a {
+    text-decoration: none;
+    color: #EF7B22;
+}
+
+#error-nav a:active, #error-nav a:visited {
+    color: #EF7B22;
+}
+
+#error-nav a:hover {
+    text-decoration: underline;
+}
+
 /*------ INDEX ------*/
 .wrapper-index {
     max-width: 500px;
@@ -265,6 +284,7 @@ header a:hover {
 .wrapper-services-index, .wrapper-news-index {
     overflow: hidden;
     position: relative;
+    height: 32em;
 }
 
 #for-sale-bg  {
@@ -323,8 +343,16 @@ header a:hover {
 }
 
 .left-p, .right-p {
-    width: 49.6%;
     margin-top: 0;
+}
+
+.left-p a, .left-p a:active, .left-p a:visited, .right-p a, .right-p a:active, .right-p a:visited {
+    color: rgb(211, 92, 2);
+    text-decoration: none;
+}
+
+.left-p a:hover, .right-p a:hover {
+    text-decoration: underline;
 }
 
 .left-p {
@@ -339,7 +367,11 @@ header a:hover {
     float: right;
 }
 
-.worker-image {
+.wp-block-column:not(:first-child) {
+    margin-left: 0.5em !important;
+}
+
+.worker-image img {
     border-radius: 50%;
     width: 100%;
 }
@@ -347,7 +379,17 @@ header a:hover {
 /*------ SERVICES ------*/
 .wrapper-services h2 {
     margin-top: 0;
+    margin-bottom: 0;
 }
+
+.wrapper-services a, .wrapper-services a:active, .wrapper-services a:visited {
+    color: rgb(211, 92, 2);
+    text-decoration: none;
+}
+
+.wrapper-services a:hover {
+    text-decoration: underline;
+} 
 
 .service-left, .service-right, .image-left, .image-right {
     width: 48%;
@@ -383,6 +425,23 @@ header a:hover {
     background-color: #F9F6E9;
     padding: 4em 0;
     margin-bottom: 3em;
+}
+
+.places-text {
+    font-size: 0.85em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.places-text li::before {
+    content: "\2022";
+    font-size: 1.1em;
+    color: #EF7B22;
+    font-weight: bold; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; 
 }
 
 /*------ NEWS ------*/
@@ -464,6 +523,7 @@ header a:hover {
 /*------ CONTACT ------*/
 .contact-icon img {
     height: 3.5em;
+    width: auto;
 }
 
 #map-bg {
@@ -585,9 +645,7 @@ footer a:hover {
     #button-up {
         display: none;
     }
-}
 
-@media screen and (max-width: 1140px) {
     .wrapper, .wrapper-services, .wrapper-footer {
         max-width: 1000px;
     }
@@ -598,6 +656,10 @@ footer a:hover {
 
     .wrapper-services-index section, .wrapper-news-index section {
         width: 17.2em;
+    }
+
+    .wrapper-news-index .info-con {
+        margin-top: -2em;
     }
 
     .info-con a {
@@ -730,6 +792,10 @@ footer a:hover {
         margin-top: -5em;
     }
 
+    .wrapper-news-index {
+        height: 35em;
+    }
+
     .index-info {
         padding-top: 6em;
         margin-top: 0;
@@ -814,6 +880,7 @@ footer a:hover {
 @media screen and (max-width: 850px) {
     .wrapper-services-index, .wrapper-news-index {
         position: static;
+        height: auto;
     }
 
     .wrapper-services-index section, .wrapper-news-index section {
@@ -822,7 +889,7 @@ footer a:hover {
         display: block;
         margin-bottom: 2em;
         float: none;
-        padding-bottom: 2em;
+        padding-bottom: 1em;
     }
 
     .info-con {
@@ -834,6 +901,10 @@ footer a:hover {
         position: static;
     }
 
+    .wrapper-news-index .info-con {
+        margin-top: 0;
+    }
+
     .no-margin {
         margin: 0 auto !important;
     }
@@ -843,6 +914,10 @@ footer a:hover {
         float: none;
         border: 0;
         padding-left: 0;
+    }
+
+    .wp-block-columns {
+        display: block !important;
     }
 
     .image-left {
